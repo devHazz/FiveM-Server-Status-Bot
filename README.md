@@ -30,3 +30,6 @@ It is optional if you want to add additional fields for logos or server branding
 
 If you know what you are doing, you can just use the index.js and put it inside an existing bot that you have made and then just install the required modules.
 
+`Note:`
+
+I know there is a few modules in `node_modules` that are not needed but i am very lazy so remove them if you know what you are doing xd 
