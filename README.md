@@ -34,4 +34,14 @@ If you know what you are doing, you can just use the index.js and put it inside 
 
 I know there is a few modules in `node_modules` that are not needed but i am very lazy so remove them if you know what you are doing xd 
 
+`Disclaimer:` 
+
+If you get an error such as `can not find module` or something similiar, make sure you have installed all dependencies.
+
+Example:
+`npm i gamedig`
+`npm i snekfetch`
+
+*These can vary but these two are the most common when using this*
+
 ![Example Usage](https://illegal-to.wear-a-ma.sk/7SG6K3dGqP.png)
