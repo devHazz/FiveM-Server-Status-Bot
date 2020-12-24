@@ -17,6 +17,13 @@ Gamedig.query({
   state.players.forEach(p => {
       players.push(`\`\`${p.name}\`\``)
   });
+  client.user.setPresence({
+        status: "online",
+        game: {
+            name: `Over ${state.raw.clients} Players!`, // the bot will put the server player count in the status - Watching over 10 players!
+            type: "Watching",
+        }
+    })
   var embed = new Discord.RichEmbed()
       .setColor("YELLOW")
       .setTitle('__**GravHub**__')
