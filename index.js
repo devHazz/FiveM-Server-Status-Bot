@@ -18,10 +18,10 @@ Gamedig.query({
       players.push(`\`\`${p.name}\`\``)
   });
   client.user.setPresence({
-        status: "online",
+        status: "online", // dnd for do not disturb
         game: {
             name: `Over ${state.raw.clients} Players!`, // the bot will put the server player count in the status - Watching over 10 players!
-            type: "Watching",
+            type: "Watching", // Supported as well: Playing
         }
     })
   var embed = new Discord.RichEmbed()
