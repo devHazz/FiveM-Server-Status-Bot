@@ -28,7 +28,7 @@ client.on('ready', async () => {
         });
         SetPresence(client, `Over ${state.raw.players}`)
       
-        var embed = new RichEmbed()
+        let embed = new RichEmbed()
             .setTitle('__**GravHub**__')
             .addField('**Server Status:**', `Online`, true)
             .addField('**Online Players:**', `**Total:** \`${state.raw.clients}\` / \`${state.raw.sv_maxclients}\``, true)
@@ -38,7 +38,7 @@ client.on('ready', async () => {
           statuschannel.messages.last().edit(embed);
       
       }).catch(() => {
-        var embed = new Discord.RichEmbed()
+        let embed = new Discord.RichEmbed()
             .addField('**Server Status:**', `No Players Online!`)
             .setTitle('__**GravHub**__');
       
